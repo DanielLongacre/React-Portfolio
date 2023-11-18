@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,306 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+
+/* Global Selectors */
+* {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
+
+title {
+  display: none;
+}
+
+body {
+  background: white;
+  color: white;
+}
+
+/* Header Section */
+header {
+  background-color: rgb(44, 44, 44); 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h1 {
+  background-color: skyblue;
+  color: rgb(44, 44, 44);
+  padding: 0 5px 0 50px;
+  margin: 10px 0;
+  font-size: 4vw;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+nav a {
+  margin: 0 20px;
+  color: skyblue;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  border-color: skyblue;
+  font-size: 2vw;
+}
+
+nav a:hover {
+  color: blue;
+}
+
+/* Hero Image */
+#hero {
+  background-image: url(../images/hero_image.jpg);
+  background-size: auto;
+  height: 30vh;
+  width: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-position-x: 85%;
+  background-position-y: 50%;
+}
+
+#hero img {
+  color: transparent;
+}
+
+#hero h2 {
+  margin: 0 80px 25px 0;
+  background-color: skyblue;
+  color: black;
+  padding: 5px 5px 5px 3px;
+}
+#blueshirt {
+  max-width: 400px;
+  min-width: 100px;
+  width: 7%;
+  margin-top: 10px;
+  margin-right: 80px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+/* Main section */
+main {
+  display: block;
+}
+
+/* 3 sections in main */
+section {
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
+
+/* About section */
+#about {
+  margin-top: 5%;
+}
+
+/* 1st Child of the 3 sections  */
+.container {
+  display: flex;
+}
+
+/* Container for each Section title */
+.title {
+  display: flex;
+  flex: 0 0 20%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 5%;
+}
+
+/* Title of each section (left side) */
+.title h2 {
+  color: midnightblue;
+  font-size: 4vw;
+  text-align: right;
+  align-self: flex-start;
+}
+
+/* Container of each sections content */
+.content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex: 0 0 70%;
+  justify-content: center;
+  margin-left: 5%;
+  border-left: 3px solid midnightblue;
+}
+
+/* The actual content (right side) */
+.content p {
+  font-size: 3vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: midnightblue;
+}
+
+/* Contact links */
+.content a {
+  font-size: 2.5vw;
+  align-self: center;
+  flex-wrap: nowrap;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: midnightblue;
+  border-bottom: 0.3vh solid midnightblue;
+}
+
+.content a:hover {
+  color: skyblue;
+}
+
+/* Container for work section */
+#work .content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Container for each separate work */
+.box {
+  border: 3px solid midnightblue;
+  background: midnightblue;
+  margin-bottom: 15px;
+  margin-left: 5%;
+  padding: 50px;
+  cursor: pointer;
+}
+
+#work1 {
+  width: 80%;
+  margin-left: 5%;
+  display: flex;
+}
+
+#work1 .backgrounds {
+  width: 30%;
+}
+
+#work2 {
+  width: 30%;
+  display: flex;
+  background-image: url(./assets/Siteimg.png);
+  background-size: cover;
+}
+
+#work3 {
+  width: 30%;
+  display: flex;
+}
+
+#work4 {
+  width: 30%;
+  display: flex;
+  background-image: url(../images/lilypad\ F1.png);
+  background-size: cover;
+}
+
+#work5 {
+  width: 30%;
+  display: flex;
+}
+
+/* The work items themselves */
+.backgrounds {
+  background-color: skyblue;
+  position: relative;
+  right: 50px;
+  top: 35px;
+  padding-right: 15px;
+  flex-wrap: wrap;
+}
+
+/* Each work item title */
+h4 {
+  color: black;
+  text-align: left;
+  font-size: 2vw;
+  float: left;
+}
+
+/* Each work item subtitle */
+.box p {
+  border: none;
+  color: rgb(48, 48, 48);
+  font-size: 2vw;
+}
+
+footer {
+  text-align: center;
+  font-size: 2vw;
+}
+
+footer p {
+  color: black;
+}
+
+
+@media screen and (max-width: 1064px) {
+  #work1 {
+      width: 70%;
+  }
+  #work2 {
+      width: 20%;
+  }
+  #work3 {
+      width: 20%;
+  }
+  #work4 {
+      width: 20%;
+  }
+  #work5 {
+      width: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+      font-size: 6vw;
+  }
+  nav a {
+      font-size: 20px;
+  }
+  #work .content {
+      justify-content: flex-start;
+  }
+
+  #work1 {
+      width: 65%;
+  }
+  #work2 {
+      width: 65%;
+  }
+  #work3 {
+      width: 65%;
+  }
+  #work4 {
+      width: 65%;
+  }
+  #work5 {
+      width: 65%;
+  }
+  .content {
+      justify-content: center;
+  }
+  .content a {
+      text-align: center;
+  }
+}
+
+
+
+
+

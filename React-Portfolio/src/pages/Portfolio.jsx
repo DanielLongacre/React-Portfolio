@@ -1,20 +1,55 @@
 export default function Portfolio() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
-    </div>
+  
+    <>
+      <section id="work">
+            <div className="container d-flex">
+                {/* <!-- All left side titles have the same className --> */}
+                <div className="title">
+                    <h2>Work</h2>
+                </div>
+                <div className="content">
+                    {/* <!-- All cards have the same className and separate ids --> */}
+                    <div className="box" id="work1">
+                        <div className="backgrounds">
+                            <h4>Surf Report</h4> 
+                            <p>MERN Stack</p>
+                        </div>
+                    </div>
+                    <div className="box" id="work2">
+                        <a href="https://brianahlers.github.io/lyriclookup/">
+                            <div className="backgrounds">
+                                <h4>Lyric Lookup</h4>
+                                <p>HTML/CSS/JavaScript</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="box" id="work3">
+                        <div className="backgrounds">
+                            <h4>Calculator</h4>
+                            <p>React/JavaScript/CSS</p>
+                        </div>
+                    </div>
+                    <div className="box" id="work4">
+                        <a href="https://aads10323-501dfea30cfd.herokuapp.com/">
+                            <div className="backgrounds">
+                                <h4>Leap-To-Success</h4> 
+                                <p>JavaScript
+                                    /Sequelize
+                                    /Handlebars</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="box" id="work5">
+                        <div className="backgrounds">
+                            <h4>Run Buddy</h4> 
+                            <p>HTML/CSS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </>
+
   );
 }

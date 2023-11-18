@@ -2,11 +2,11 @@ export default function Home() {
   return (
     <>
       <section id="about">
-            <div class="container">
-                <div class="title">
+            <div className="container">
+                <div className="title">
                     <h2>About Me</h2>
                 </div>
-                <div class="content">
+                <div className="content">
                     <p> I'm a computer programmer, passionate about problem 
                         solving and learning new skills. I have 2 years of 
                         experience with several projects.</p>
