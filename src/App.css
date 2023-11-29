@@ -41,6 +41,10 @@
   color: #888;
 } */
 
+.container {
+  background-image: url("./assets/hero_image.jpg");
+  background-size: cover;
+}
 
 /* Global Selectors */
 * {
